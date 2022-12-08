@@ -245,6 +245,7 @@ export default class SimpleAfterBeforeTool {
     removeBtn.innerHTML = this.IconClose;
     removeBtn.addEventListener('click', () => {
       block.remove();
+      this.wrapper.querySelector('.cdxcarousel-addImage').style.display = 'flex';
     });
     removeBtn.style.display = 'none';
 
@@ -262,7 +263,7 @@ export default class SimpleAfterBeforeTool {
     }
 
     if (this.wrapper.querySelectorAll('.cdxcarousel-list .cdxcarousel-item').length >= 1) {
-      this.wrapper.querySelector('.cdxcarousel-addImage').remove();
+      this.wrapper.querySelector('.cdxcarousel-addImage').style.display = 'none';
     }
 
     return block;
