@@ -262,10 +262,6 @@ export default class SimpleAfterBeforeTool {
       item.appendChild(imagePreloader);
     }
 
-    if (this.wrapper.querySelectorAll('.cdxcarousel-list .cdxcarousel-item').length >= 1) {
-      this.wrapper.querySelector('.cdxcarousel-addImage').style.display = 'none';
-    }
-
     return block;
   }
 
@@ -311,6 +307,10 @@ export default class SimpleAfterBeforeTool {
       this.list.childNodes[this.list.childNodes.length - 2].firstChild.childNodes[2].style.backgroundImage = '';
       this.list.childNodes[this.list.childNodes.length - 2].firstChild.firstChild.value = response.file.url;
       this.list.childNodes[this.list.childNodes.length - 2].firstChild.classList.add('cdxcarousel-item--empty');
+
+      if (this.wrapper.querySelectorAll('.cdxcarousel-list .cdxcarousel-item').length >= 1) {
+        this.wrapper.querySelector('.cdxcarousel-addImage').style.display = 'none';
+      }
     } else {
       this.uploadingFailed('incorrect response: ' + JSON.stringify(response));
     }
