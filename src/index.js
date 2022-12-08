@@ -94,7 +94,7 @@ export default class SimpleAfterBeforeTool {
       title: 'AfterBeforeTool',
       icon: '<?xml version="1.0" encoding="utf-8"?>\n' +
           '<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->\n' +
-          '<svg version="1.1" style="width: 16px" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"\n' +
+          '<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"\n' +
           '\t viewBox="131 -131 512 512" style="enable-background:new 131 -131 512 512;" xml:space="preserve">\n' +
           '<g id="XMLID_6_">\n' +
           '\t<path id="XMLID_11_" d="M340.9-84.6H223.8c-25.8,0-46.4,20.6-46.4,46.4v326.4c0,25.8,20.6,46.4,46.4,46.4h116.4V381h47.1v-512\n' +
